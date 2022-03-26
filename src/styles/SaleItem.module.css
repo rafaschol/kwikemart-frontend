@@ -1,0 +1,61 @@
+.element {
+  display: flex;
+  background-color: #fff;
+  position: relative;
+}
+.element:not(:last-child) {
+  border-bottom: 1px solid var(--gray);
+}
+.element img {
+  width: 40%;
+  border-right: 1px solid var(--gray);
+}
+.element .productInfo {
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+}
+.element .productInfo .productName {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+.element .productInfo .productQuantity input {
+  border: 1px solid var(--gray);
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  width: 5rem;
+}
+.element .productInfo .productPrice span {
+  color: var(--primary);
+}
+@media (min-width: 768px) {
+  .element img {
+    width: 20%;
+  }
+}
+
+.element .delete {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border: none;
+  background-color: transparent;
+}
+.element .delete i {
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+.element .delete:hover {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .element .delete {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+}

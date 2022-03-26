@@ -1,0 +1,52 @@
+.newSaleButton {
+  display: table;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--primary);
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.2rem;
+  margin-left: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 0.2rem;
+  border: 1px solid var(--gray);
+}
+.table thead, .table tbody {
+  border: none;
+}
+.table tr {
+  border-bottom: 1px solid var(--gray);
+}
+.table, .table th, .table td  {
+  text-align: left;
+}
+.table th, .table td {
+  padding: 0.5rem 1rem;
+}
+.table td a {
+  text-decoration: none;
+}
+.table td .deleteSaleButton {
+  border: none;
+  background-color: transparent;
+}
+.table td .deleteSaleButton i {
+  color: var(--primary);
+}
+.table td .deleteSaleButton:hover {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .table {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .newSaleButton {
+    margin-right: 10%;
+  }
+}

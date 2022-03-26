@@ -1,0 +1,45 @@
+.alert {
+  padding: 1rem 4rem 1rem 1.5rem;
+  position: absolute;
+  top: 6rem;
+  right: 1rem;
+  display: inline;
+  border-radius: 0.2rem;
+  border-width: 1px;
+  border-style: solid;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+.alert.hidden {
+  opacity: 0;
+}
+.alert.success {
+  background-color: rgba(227, 253, 235, 1);
+  border-color: rgba(38, 179, 3, 1);
+  color: rgba(60, 118, 61, 1);
+}
+.alert.error {
+  background-color: rgba(248, 215, 218, 1);
+  border-color: rgba(220, 53, 69, 1);
+  color: rgba(114, 28, 36,1);
+}
+.alert .close {
+  transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  border: none;
+  background-color: transparent;
+}
+.alert .close i {
+  font-size: 1.2rem;
+}
+.alert.success i {
+  color: rgba(60, 118, 61, 1);
+}
+.alert.error i {
+  color: rgba(114, 28, 36,1);
+}
+.alert .close:hover {
+  cursor: pointer;
+}

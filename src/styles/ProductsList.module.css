@@ -1,0 +1,32 @@
+.list {
+  display: grid;
+  gap: 1.5rem;
+}
+.list a {
+  text-decoration: none;
+  color: initial;
+}
+.list li {
+  list-style: none;
+  background-color: #fff;
+  border-radius: 0.2rem;
+  border: 1px solid var(--gray);
+  overflow: hidden;
+  line-height: 0;
+}
+.element img {
+  width: 100%;
+  border-bottom: 1px solid var(--gray);
+}
+.element p {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2rem 0;
+  line-height: 0;
+}
+
+@media (min-width: 768px) {
+  .list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,73 @@
+.addItem {
+  border: none;
+  display: table;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--primary);
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  margin-left: auto;
+}
+.addItem:hover {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  border: 1px solid var(--gray);
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+.modalTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin: 1rem 0;
+}
+.addItemForm {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+.addItemForm input, .addItemForm select {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--gray);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+.addItemForm input[type="number"] {
+  width: 5rem;
+}
+.addItemForm input[type="submit"] {
+  border: none;
+  display: inline-block;
+  color: var(--white);
+  background-color: var(--primary);
+  padding: 0.5rem 2rem;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+.addItemForm input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.createSaleButton {
+  border: none;
+  display: table;
+  color: var(--white);
+  background-color: var(--primary);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem auto;
+  border-radius: 0.2rem;
+  font-size: 1.2rem;
+}
+.createSaleButton:hover {
+  cursor: pointer;
+}
